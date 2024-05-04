@@ -1,0 +1,213 @@
+/* @font-face {
+    font-family: Cairo;
+    src: url('./../fonts/Amiri-Regular.ttf');
+} */
+
+* {
+
+    font-family: 'Cairo';
+
+}
+
+body {
+    width: 100%;
+    background-image: url('./../images/bg/EidMubarak.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.heading {
+    text-align: center;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.form-select {
+    color: #fff;
+}
+
+.select_box {
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    border-radius: 8px;
+    background: var(--gradient, linear-gradient(269deg, #EF9453 -30.63%, #EF6358 124.09%));
+}
+
+.select_box:after {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    content: "";
+    z-index: 98;
+}
+
+.select_box select {
+    width: 220px;
+    border: 0;
+    position: relative;
+    z-index: 99;
+    background: none;
+}
+
+.select_box select option {
+    color: black;
+}
+
+.frame {
+    border-radius: 8px;
+    border: 2px solid var(--gradient, #EF9453);
+}
+
+.card {
+    width: 10rem;
+}
+
+p {
+    color: var(--Taxt, #133039);
+    font-family: "Space Grotesk";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 150% */
+}
+.Social-icons{
+    width: 25px;
+}
+.footer-logo{
+    width: 100px;
+}
+/*xs*/
+@media screen and (max-width: 375px) {
+    .card {
+        width: 15rem;
+        border: 2px solid var(--gradient, #EF9453);
+        text-align: center !important;
+    }
+
+    .frame {
+        border: none;
+    }
+    p {
+        color: var(--Taxt, #133039);
+        font-family: "Space Grotesk";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 150% */
+    }
+    .Social-icons{
+        width: 15px;
+    }
+}
+
+/*sm*/
+@media screen and (max-width: 768px) and (min-width: 375px) {
+
+    /* .image {
+        width: 100px;
+        height: 100px;
+        border: 2px solid var(--gradient, #EF9453);
+    } */
+    .card {
+        width: 15rem;
+        border: 2px solid var(--gradient, #EF9453);
+    }
+
+    .frame {
+        border: none;
+    }
+    p {
+        color: var(--Taxt, #133039);
+        font-family: "Space Grotesk";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 150% */
+    }
+    .Social-icons{
+        width: 15px;
+    }
+    .footer-logo{
+        width: 70px;
+    }
+    span {
+        font-size: 20px;
+        font-weight: 550;
+    }    
+    .select_box{
+        width : 120px;
+        height: 50px;
+    }
+}
+
+/*md*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .card {
+        width: 20rem;
+        border: 1px solid var(--gradient, #EF9453);
+    }
+
+    /* .image {
+        width: 200px;
+        height: 200px;
+        border: 2px solid var(--gradient, #EF9453);
+    } */
+    /* .frame{
+        border: none;
+    } */
+}
+
+/*lg*/
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .card {
+        width: 40rem;
+        border: 2px solid var(--gradient, #EF9453);
+    }
+}
+
+/*more then lg*/
+@media screen and (min-width: 1200px) {
+    .card {
+        width: 40rem;
+        border: 2px solid var(--gradient, #EF9453);
+    }
+}
+
+.input-name {
+    border-radius: 8px;
+    border: 2px solid var(--gradient, #EF9453);
+}
+
+.download-btn {
+
+    color: #fff;
+    border-radius: 8px;
+    background: var(--gradient, linear-gradient(269deg, #EF9453 -30.63%, #EF6358 124.09%));
+}
+
+.download-btn:hover {
+
+    color: #fff;
+    background: var(--gradient, linear-gradient(269deg, #dc894e -30.63%, #EF6358 124.09%));
+}
+/* 
+hr {
+    border: 1px solid black !important;
+} */
+.footer-row{
+    border-top: 2px solid black !important;
+}
